@@ -18,7 +18,7 @@ class AdvanceService extends Service {
     //根据id批量删除数据
     async batchDelete(tableName, ids) {
         ids.forEach(element => {
-            await this.app.mysql.delete(tableName, { id: element });
+            this.app.mysql.delete(tableName, { id: element });
         });
     }
 
@@ -41,13 +41,10 @@ class AdvanceService extends Service {
         datas.forEach(element => {
             //如果参数中传入了id，则为修改，否则为插入
             if (element.id) {
-                const result = await this.app.mysql.update(tableName, element); // 更新 posts 表中的记录
-                const updateSuccess = result.affectedRows === 1;
+                const result = this.app.mysql.update(tableName, element); // 更新 posts 表中的记录
             } else {
                 element["id"] = uuid();
-                const result = await this.app.mysql.insert(tableName, element);
-                // 判断插入成功·
-                const insertSuccess = result.affectedRows === 1;
+                const result = this.app.mysql.insert(tableName, element);
             }
         });
     }
