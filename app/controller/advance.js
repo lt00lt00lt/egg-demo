@@ -2,13 +2,26 @@
 
 const Controller = require('egg').Controller;
 
-class AdvanceController extends Controller {
-    //检索方法
+module.exports = class AdvanceController extends Controller {
+    //查询方法
     async find() {
         const { ctx, service } = this;
+        let pageNum = parseInt(ctx.query.pageNum);
+        let pageSize = parseInt(ctx.query.pageSize);
         let tableName = ctx.params.tableName;
         let conditions = ctx.request.body;
-        const res = await service.advance.find(tableName, conditions);
+        const res = await service.advance.find(tableName, conditions, pageNum, pageSize);
+        ctx.body = res;
+    }
+
+    //高级检索方法
+    async find() {
+        const { ctx, service } = this;
+        let pageNum = parseInt(ctx.query.pageNum);
+        let pageSize = parseInt(ctx.query.pageSize);
+        let tableName = ctx.params.tableName;
+        let term = ctx.request.body;
+        const res = await service.advance.find(tableName, term, pageNum, pageSize);
         ctx.body = res;
     }
 
@@ -48,4 +61,3 @@ class AdvanceController extends Controller {
         ctx.body = res;
     }
 }
-module.exports = AdvanceController;

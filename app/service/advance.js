@@ -3,10 +3,23 @@
 const Service = require('egg').Service;
 const uuid = require('uuid/v1');
 
-class AdvanceService extends Service {
-    //检索数据
-    async find(tableName, conditions) {
-        const results = await this.app.mysql.select(tableName);
+module.exports = class AdvanceService extends Service {
+    //查询数据
+    async find(tableName, conditions, pageNum, pageSize) {
+        let sql = `select * from ${tableName} where 1=1 `;
+        if (conditions) {
+            for (let condition of conditions) {
+                if (condition.mode) {
+                    sql += `and ${condition.name} like '%${condition.value}%' `
+                } else {
+                    sql += `and ${condition.name} = '${condition.value}' `
+                }
+            }
+        }
+        if (pageNum && pageSize) {
+            sql += `limit ${pageSize * (pageNum - 1)} , ${pageSize}`
+        }
+        const results = await this.app.mysql.query(sql);
         return { results };
     }
 
@@ -49,5 +62,3 @@ class AdvanceService extends Service {
         });
     }
 }
-
-module.exports = AdvanceService;

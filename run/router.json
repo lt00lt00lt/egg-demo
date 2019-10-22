@@ -86,7 +86,7 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/save/:tableName/",
+    "path": "/api/save/:tableName",
     "regexp": "/^\\/api\\/save\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
@@ -109,7 +109,7 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/batchDelete/:tableName/",
+    "path": "/api/batchDelete/:tableName",
     "regexp": "/^\\/api\\/batchDelete\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
@@ -132,7 +132,7 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/batchSave/:tableName/",
+    "path": "/api/batchSave/:tableName",
     "regexp": "/^\\/api\\/batchSave\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"

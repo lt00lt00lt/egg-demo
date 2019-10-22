@@ -40,6 +40,8 @@ module.exports = appInfo => {
       password: 'root',
       // 数据库名
       database: 'lab_manage_system',
+      // 打印查询结果
+      debug: false,
     },
     // 是否加载到 app 上，默认开启
     app: true,

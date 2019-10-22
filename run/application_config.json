@@ -194,7 +194,8 @@
         "port": "3306",
         "user": "root",
         "password": "<String len: 4>",
-        "database": "lab_manage_system"
+        "database": "lab_manage_system",
+        "debug": false
       }
     },
     "nunjucks": {

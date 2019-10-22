@@ -7,7 +7,8 @@
       "port": "D:\\Project\\egg-demo\\config\\config.default.js",
       "user": "D:\\Project\\egg-demo\\config\\config.default.js",
       "password": "D:\\Project\\egg-demo\\config\\config.default.js",
-      "database": "D:\\Project\\egg-demo\\config\\config.default.js"
+      "database": "D:\\Project\\egg-demo\\config\\config.default.js",
+      "debug": "D:\\Project\\egg-demo\\config\\config.default.js"
     },
     "app": "D:\\Project\\egg-demo\\config\\config.default.js",
     "agent": "D:\\Project\\egg-demo\\config\\config.default.js",
