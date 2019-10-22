@@ -23,6 +23,18 @@ module.exports = class AdvanceService extends Service {
         return { results };
     }
 
+    //高级检索
+    async seniorFind(tableName, term, pageNum, pageSize) {
+        let sql = `select * from ${tableName} `;
+        
+        
+        if (pageNum && pageSize) {
+            sql += `limit ${pageSize * (pageNum - 1)} , ${pageSize}`
+        }
+        const results = await this.app.mysql.query(sql);
+        return { results };
+    }
+
     //根据id删除数据
     async delete(tableName, id) {
         const results = await this.app.mysql.delete(tableName, { id: id });

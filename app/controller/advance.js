@@ -15,13 +15,13 @@ module.exports = class AdvanceController extends Controller {
     }
 
     //高级检索方法
-    async find() {
+    async seniorFind() {
         const { ctx, service } = this;
         let pageNum = parseInt(ctx.query.pageNum);
         let pageSize = parseInt(ctx.query.pageSize);
         let tableName = ctx.params.tableName;
         let term = ctx.request.body;
-        const res = await service.advance.find(tableName, term, pageNum, pageSize);
+        const res = await service.advance.seniorFind(tableName, term, pageNum, pageSize);
         ctx.body = res;
     }
 
