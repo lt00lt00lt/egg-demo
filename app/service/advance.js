@@ -1,38 +1,25 @@
 'use strict';
 
 const Service = require('egg').Service;
-const uuid = require('uuid/v1');
+const uuid = require('uuid/v4');
+const query = require('../config/query');
 
 module.exports = class AdvanceService extends Service {
     //查询数据
     async find(tableName, conditions, pageNum, pageSize) {
-        let sql = `select * from ${tableName} where 1=1 `;
-        if (conditions) {
-            for (let condition of conditions) {
-                if (condition.mode) {
-                    sql += `and ${condition.name} like '%${condition.value}%' `
-                } else {
-                    sql += `and ${condition.name} = '${condition.value}' `
-                }
-            }
-        }
-        if (pageNum && pageSize) {
-            sql += `limit ${pageSize * (pageNum - 1)} , ${pageSize}`
-        }
+        let sql = query.simpleSqlBuilder(tableName, conditions, pageNum, pageSize);
         const results = await this.app.mysql.query(sql);
         return { results };
     }
 
     //高级检索
     async seniorFind(tableName, term, pageNum, pageSize) {
-        let sql = `select * from ${tableName} `;
-        
-        
-        if (pageNum && pageSize) {
-            sql += `limit ${pageSize * (pageNum - 1)} , ${pageSize}`
-        }
-        const results = await this.app.mysql.query(sql);
-        return { results };
+        let res = query.advancedSqlBuilder(tableName, term, pageNum, pageSize);
+        let sql = res.sql;
+        let number = res.number;
+        let results = await this.app.mysql.query(sql);
+        let count = await this.app.mysql.query(number);
+        return { results, count };
     }
 
     //根据id删除数据
