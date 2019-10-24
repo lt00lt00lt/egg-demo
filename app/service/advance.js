@@ -2,19 +2,19 @@
 
 const Service = require('egg').Service;
 const uuid = require('uuid/v4');
-const query = require('../config/query');
+const SqlBuilder = require('../config/SqlBuilder');
 
 module.exports = class AdvanceService extends Service {
     //查询数据
     async find(tableName, conditions, pageNum, pageSize) {
-        let sql = query.simpleSqlBuilder(tableName, conditions, pageNum, pageSize);
+        let sql = SqlBuilder.simpleSqlBuilder(tableName, conditions, pageNum, pageSize);
         const results = await this.app.mysql.query(sql);
         return { results };
     }
 
     //高级检索
     async seniorFind(tableName, term, pageNum, pageSize) {
-        let res = query.advancedSqlBuilder(tableName, term, pageNum, pageSize);
+        let res = SqlBuilder.advancedSqlBuilder(tableName, term, pageNum, pageSize);
         let sql = res.sql;
         let number = res.number;
         let results = await this.app.mysql.query(sql);
