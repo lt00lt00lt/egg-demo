@@ -26,7 +26,14 @@ layui.use('table', function () {
             table.on('tool(test)', function (obj) {
                 var data = obj.data;
                 if (obj.event === 'detail') {
-                    layer.msg('ID：' + data.student_id + ' 的查看操作');
+                    layer.msg(`
+                        ID:${data.student_id}<br>
+                        用户名${data.student_username}<br>
+                        姓名${data.student_name}<br>
+                        性别${data.student_sex}<br>
+                        邮箱${data.student_email}<br>
+                        电话${data.student_phone}<br>
+                    `);
                 } else if (obj.event === 'del') {
                     layer.confirm('真的删除行么', function (index) {
                         obj.del();
@@ -46,6 +53,4 @@ layui.use('table', function () {
             console.log(e);
         }
     })
-
-
 });

@@ -4,6 +4,9 @@ const Service = require('egg').Service;
 const uuid = require('uuid/v4');
 const SqlBuilder = require('../config/SqlBuilder');
 
+/**
+ * 高级检索、增删改、文件上传下载Service
+ */
 module.exports = class AdvanceService extends Service {
     //查询数据
     async find(tableName, conditions, pageNum, pageSize) {

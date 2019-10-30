@@ -2,6 +2,9 @@
 
 const Controller = require('egg').Controller;
 
+/**
+ * 高级检索、增删改、文件上传下载Controller
+ */
 module.exports = class AdvanceController extends Controller {
     //查询方法
     async find() {

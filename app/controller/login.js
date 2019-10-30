@@ -2,6 +2,9 @@
 
 const Controller = require('egg').Controller;
 
+/**
+ * 用户登陆Controller
+ */
 class LoginController extends Controller {
     async login() {
         const { ctx, service } = this;
