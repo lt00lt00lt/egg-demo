@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="public/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="public/layui/css/layui.css">
 </head>
+
 <body>
-    主页
+    <table class="layui-hide" lay-filter="test" id="test"></table>
+
+    <script type="text/html" id="barDemo">
+        <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+    </script>
+
+    <script src="public/layui/layui.all.js" charset="utf-8"></script>
+    <script src="public/js/index.js"></script>
 </body>
+
 </html>
