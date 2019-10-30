@@ -3,7 +3,7 @@
 
 <head>
 	<title>Purple_loginform Website Template | Home :: w3layouts</title>
-	<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="public/css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -19,7 +19,7 @@
 			}
 		}
 	</script>
-	<script src="js/jquery.min.js"></script>
+	<script src="public/js/jquery.min.js"></script>
 	<script>
 		$(document).ready(function (c) {
 			$('.alert-close').on('click', function (c) {
@@ -29,6 +29,7 @@
 			});
 		});
 	</script>
+	<script src="public/js/login.js"></script>
 </head>
 
 <body>
@@ -41,17 +42,17 @@
 			</div>
 			<form>
 				<li>
-					<input type="text" class="text" value="Username" onfocus="this.value = '';"
+					<input id="username" type="text" class="text" value="Username" onfocus="this.value = '';"
 						onblur="if (this.value == '') {this.value = 'Username';}"><a href="#" class=" icon user"></a>
 				</li>
 				<div class="clear"> </div>
 				<li>
-					<input type="password" value="Password" onfocus="this.value = '';"
+					<input id="password" type="password" value="Password" onfocus="this.value = '';"
 						onblur="if (this.value == '') {this.value = 'Password';}"> <a href="#" class="icon lock"></a>
 				</li>
 				<div class="clear"> </div>
 				<div class="submit">
-					<input type="submit" style="margin-left: 30%;" onclick="myFunction()" value="登    录">
+					<input class="login" type="button" style="margin-left: 30%;" onclick="login()" value="登    录">
 					<div class="clear"> </div>
 				</div>
 

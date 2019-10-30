@@ -3,8 +3,11 @@
 const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
-  async index() {
+  async login() {
     await this.ctx.render('login');
+  }
+  async index() {
+    await this.ctx.render('index');
   }
 }
 

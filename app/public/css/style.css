@@ -113,7 +113,7 @@ input[type="text"]:hover, input[type="password"]:hover{
 .submit{
 	padding-top:3em;
 }
-input[type="submit"] {
+.login  {
 	float: left;
 	color: #fff;
 	cursor: pointer;
@@ -130,7 +130,7 @@ input[type="submit"] {
 	-moz-border-radius:0.5em;
 	-o-border-radius:0.5em;
 }
-input[type="submit"]:hover {
+.login:hover {
 	background: #fff;
 	color:#6C496F;
 	border:2px solid #6C496F;

@@ -6,7 +6,9 @@
 module.exports = app => {
   const { router, controller } = app;
 
-  router.get('/', controller.home.index);
+  router.get('/', controller.home.login);
+  router.get('/index', controller.home.index);
 
   require('./router/advance')(app);
+  require('./router/login')(app);
 };
