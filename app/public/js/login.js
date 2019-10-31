@@ -14,5 +14,5 @@ let login = () => {
         error:(e)=>{
             console.log(e);
         }
-    })
+    });
 }
