@@ -80,6 +80,22 @@
       "checkAddress": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-security@2.6.1@egg-security/config/config.default.js"
     }
   },
+  "multipart": {
+    "fileSize": "/Users/lt/Desktop/Project/Example/egg-demo/config/config.default.js",
+    "mode": "/Users/lt/Desktop/Project/Example/egg-demo/config/config.default.js",
+    "fileExtensions": "/Users/lt/Desktop/Project/Example/egg-demo/config/config.default.js",
+    "autoFields": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
+    "fields": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
+    "files": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
+    "whitelist": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js"
+    }
+  },
   "session": {
     "maxAge": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
     "key": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
@@ -123,22 +139,6 @@
   "schedule": {
     "directory": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-schedule@3.6.4@egg-schedule/config/config.default.js"
   },
-  "multipart": {
-    "mode": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
-    "autoFields": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
-    "defaultCharset": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
-    "fieldNameSize": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
-    "fieldSize": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
-    "fields": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
-    "fileSize": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
-    "files": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
-    "fileExtensions": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
-    "whitelist": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
-    "tmpdir": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js",
-    "cleanSchedule": {
-      "cron": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart/config/config.default.js"
-    }
-  },
   "development": {
     "watchDirs": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-development@2.4.3@egg-development/config/config.default.js",
     "ignoreDirs": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-development@2.4.3@egg-development/config/config.default.js",
@@ -169,6 +169,12 @@
     "trimBlocks": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-view-nunjucks@2.2.0@egg-view-nunjucks/config/config.default.js",
     "lstripBlocks": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-view-nunjucks@2.2.0@egg-view-nunjucks/config/config.default.js",
     "cache": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-view-nunjucks@2.2.0@egg-view-nunjucks/config/config.local.js"
+  },
+  "oss": {
+    "default": {
+      "timeout": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-oss@2.0.0@egg-oss/config/config.default.js"
+    },
+    "useAgent": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-oss@2.0.0@egg-oss/config/config.default.js"
   },
   "env": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg@2.24.0@egg/config/config.default.js",
   "name": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg@2.24.0@egg/config/config.default.js",

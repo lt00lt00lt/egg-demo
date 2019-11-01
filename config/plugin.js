@@ -17,5 +17,11 @@ module.exports = {
   nunjucks: {
     enable: true,
     package: 'egg-view-nunjucks',
+  },
+
+  //oss
+  oss : {
+    enable: true,
+    package: 'egg-oss',
   }
 };

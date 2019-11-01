@@ -108,9 +108,11 @@
       "fieldNameSize": 100,
       "fieldSize": "100kb",
       "fields": 10,
-      "fileSize": "10mb",
+      "fileSize": "100mb",
       "files": 10,
-      "fileExtensions": [],
+      "fileExtensions": [
+        ".docx"
+      ],
       "whitelist": null,
       "tmpdir": "/var/folders/y7/t_sfvv2s5t91ptp1hf6jk5800000gn/T/egg-multipart-tmp/init",
       "cleanSchedule": {
@@ -172,6 +174,12 @@
       "trimBlocks": false,
       "lstripBlocks": false,
       "cache": false
+    },
+    "oss": {
+      "default": {
+        "timeout": "60s"
+      },
+      "useAgent": false
     },
     "env": "local",
     "name": "init",
@@ -502,6 +510,17 @@
       "from": "/Users/lt/Desktop/Project/Example/egg-demo/config/plugin.js",
       "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-view-nunjucks@2.2.0@egg-view-nunjucks",
       "version": "2.2.0"
+    },
+    "oss": {
+      "enable": true,
+      "package": "egg-oss",
+      "name": "oss",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/lt/Desktop/Project/Example/egg-demo/config/plugin.js",
+      "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-oss@2.0.0@egg-oss",
+      "version": "2.0.0"
     }
   }
 }

@@ -63,6 +63,13 @@ module.exports = appInfo => {
     },
   }
 
+  // 配置上传
+  config.multipart = {
+    fileSize: '100mb',
+    mode: 'stream',
+    fileExtensions: ['.docx'], // 扩展几种上传的文件格式
+  };
+
   return {
     ...config,
     ...userConfig,
