@@ -31,13 +31,13 @@ module.exports = appInfo => {
     // 单数据库信息配置
     client: {
       // host
-      host: '58.198.173.174',
+      host: 'cdb-11vchhbg.bj.tencentcdb.com',
       // 端口号
-      port: '3306',
+      port: '10113',
       // 用户名
       user: 'root',
       // 密码
-      password: 'root',
+      password: 'LT950120',
       // 数据库名
       database: 'lab_manage_system',
       // 打印查询结果

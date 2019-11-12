@@ -160,10 +160,10 @@
       "app": true,
       "agent": false,
       "client": {
-        "host": "58.198.173.174",
-        "port": "3306",
+        "host": "cdb-11vchhbg.bj.tencentcdb.com",
+        "port": "10113",
         "user": "root",
-        "password": "<String len: 4>",
+        "password": "<String len: 8>",
         "database": "lab_manage_system",
         "debug": false
       }
