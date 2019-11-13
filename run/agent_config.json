@@ -75,7 +75,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-onerror@2.1.0@egg-onerror/lib/onerror_page.mustache"
+      "templatePath": "D:\\Project\\egg-demo\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\lib\\onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -88,8 +88,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-watcher@3.1.0@egg-watcher/lib/event-sources/default",
-        "development": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-watcher@3.1.0@egg-watcher/lib/event-sources/development"
+        "default": "D:\\Project\\egg-demo\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\lib\\event-sources\\default",
+        "development": "D:\\Project\\egg-demo\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\lib\\event-sources\\development"
       }
     },
     "customLogger": {
@@ -114,7 +114,7 @@
         ".docx"
       ],
       "whitelist": null,
-      "tmpdir": "/var/folders/y7/t_sfvv2s5t91ptp1hf6jk5800000gn/T/egg-multipart-tmp/init",
+      "tmpdir": "C:\\Users\\49485\\AppData\\Local\\Temp\\egg-multipart-tmp\\init",
       "cleanSchedule": {
         "cron": "0 30 4 * * *"
       }
@@ -137,14 +137,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "/Users/lt/Desktop/Project/Example/egg-demo/app/public",
+      "dir": "D:\\Project\\egg-demo\\app\\public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "/Users/lt/Desktop/Project/Example/egg-demo/app/view",
+      "root": "D:\\Project\\egg-demo\\app\\view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
@@ -185,6 +185,7 @@
     "name": "init",
     "keys": "<String len: 23>",
     "proxy": false,
+    "maxIpsCount": 0,
     "maxProxyCount": 0,
     "protocolHeaders": "x-forwarded-proto",
     "ipHeaders": "x-forwarded-for",
@@ -237,9 +238,9 @@
       "author": "",
       "license": "MIT"
     },
-    "baseDir": "/Users/lt/Desktop/Project/Example/egg-demo",
-    "HOME": "/Users/lt",
-    "rundir": "/Users/lt/Desktop/Project/Example/egg-demo/run",
+    "baseDir": "D:\\Project\\egg-demo",
+    "HOME": "C:\\Users\\49485",
+    "rundir": "D:\\Project\\egg-demo\\run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -271,7 +272,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "/Users/lt/Desktop/Project/Example/egg-demo/logs/init",
+      "dir": "D:\\Project\\egg-demo\\logs\\init",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -347,8 +348,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg@2.24.0@egg/config/plugin.js",
-      "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-session@3.1.0@egg-session",
+      "from": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\plugin.js",
+      "path": "D:\\Project\\egg-demo\\node_modules\\_egg-session@3.1.0@egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -360,9 +361,9 @@
         "session"
       ],
       "env": [],
-      "from": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg@2.24.0@egg/config/plugin.js",
-      "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-security@2.6.1@egg-security",
-      "version": "2.6.1"
+      "from": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\plugin.js",
+      "path": "D:\\Project\\egg-demo\\node_modules\\_egg-security@2.7.0@egg-security",
+      "version": "2.7.0"
     },
     "jsonp": {
       "enable": true,
@@ -373,8 +374,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg@2.24.0@egg/config/plugin.js",
-      "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-jsonp@2.0.0@egg-jsonp",
+      "from": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\plugin.js",
+      "path": "D:\\Project\\egg-demo\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -386,8 +387,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg@2.24.0@egg/config/plugin.js",
-      "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-onerror@2.1.0@egg-onerror",
+      "from": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\plugin.js",
+      "path": "D:\\Project\\egg-demo\\node_modules\\_egg-onerror@2.1.0@egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -397,8 +398,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg@2.24.0@egg/config/plugin.js",
-      "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-i18n@2.1.1@egg-i18n",
+      "from": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\plugin.js",
+      "path": "D:\\Project\\egg-demo\\node_modules\\_egg-i18n@2.1.1@egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -408,8 +409,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg@2.24.0@egg/config/plugin.js",
-      "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-watcher@3.1.0@egg-watcher",
+      "from": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\plugin.js",
+      "path": "D:\\Project\\egg-demo\\node_modules\\_egg-watcher@3.1.0@egg-watcher",
       "version": "3.1.0"
     },
     "schedule": {
@@ -419,8 +420,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg@2.24.0@egg/config/plugin.js",
-      "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-schedule@3.6.4@egg-schedule",
+      "from": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\plugin.js",
+      "path": "D:\\Project\\egg-demo\\node_modules\\_egg-schedule@3.6.4@egg-schedule",
       "version": "3.6.4"
     },
     "multipart": {
@@ -432,9 +433,9 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg@2.24.0@egg/config/plugin.js",
-      "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-multipart@2.9.0@egg-multipart",
-      "version": "2.9.0"
+      "from": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\plugin.js",
+      "path": "D:\\Project\\egg-demo\\node_modules\\_egg-multipart@2.9.1@egg-multipart",
+      "version": "2.9.1"
     },
     "development": {
       "enable": true,
@@ -447,8 +448,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg@2.24.0@egg/config/plugin.js",
-      "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-development@2.4.3@egg-development",
+      "from": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\plugin.js",
+      "path": "D:\\Project\\egg-demo\\node_modules\\_egg-development@2.4.3@egg-development",
       "version": "2.4.3"
     },
     "logrotator": {
@@ -460,8 +461,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg@2.24.0@egg/config/plugin.js",
-      "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-logrotator@3.1.0@egg-logrotator",
+      "from": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\plugin.js",
+      "path": "D:\\Project\\egg-demo\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -471,8 +472,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg@2.24.0@egg/config/plugin.js",
-      "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-static@2.2.0@egg-static",
+      "from": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\plugin.js",
+      "path": "D:\\Project\\egg-demo\\node_modules\\_egg-static@2.2.0@egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -482,8 +483,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg@2.24.0@egg/config/plugin.js",
-      "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-view@2.1.2@egg-view",
+      "from": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\plugin.js",
+      "path": "D:\\Project\\egg-demo\\node_modules\\_egg-view@2.1.2@egg-view",
       "version": "2.1.2"
     },
     "mysql": {
@@ -493,8 +494,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lt/Desktop/Project/Example/egg-demo/config/plugin.js",
-      "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-mysql@3.0.0@egg-mysql",
+      "from": "D:\\Project\\egg-demo\\config\\plugin.js",
+      "path": "D:\\Project\\egg-demo\\node_modules\\_egg-mysql@3.0.0@egg-mysql",
       "version": "3.0.0"
     },
     "nunjucks": {
@@ -507,8 +508,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lt/Desktop/Project/Example/egg-demo/config/plugin.js",
-      "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-view-nunjucks@2.2.0@egg-view-nunjucks",
+      "from": "D:\\Project\\egg-demo\\config\\plugin.js",
+      "path": "D:\\Project\\egg-demo\\node_modules\\_egg-view-nunjucks@2.2.0@egg-view-nunjucks",
       "version": "2.2.0"
     },
     "oss": {
@@ -518,8 +519,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lt/Desktop/Project/Example/egg-demo/config/plugin.js",
-      "path": "/Users/lt/Desktop/Project/Example/egg-demo/node_modules/_egg-oss@2.0.0@egg-oss",
+      "from": "D:\\Project\\egg-demo\\config\\plugin.js",
+      "path": "D:\\Project\\egg-demo\\node_modules\\_egg-oss@2.0.0@egg-oss",
       "version": "2.0.0"
     }
   }
