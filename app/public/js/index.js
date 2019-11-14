@@ -10,7 +10,7 @@ layui.use('table', function () {
         success: (res) => {
             table.render({
                 elem: '#test'
-                , data: res.results
+                , data: res.data
                 , page: true
                 , cols: [[
                     { field: 'student_id', title: 'ID', sort: true }
