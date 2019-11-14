@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    simpleSqlBuilder: function (tableName, conditions, pageNum, pageSize) {
+    simpleSqlBuilder(tableName, conditions, pageNum, pageSize) {
         let sql = `select * from ${tableName} where 1=1 `;
         if (conditions) {
             for (let condition of conditions) {
@@ -18,7 +18,7 @@ module.exports = {
         return sql;
     },
 
-    advancedSqlBuilder: function (tableName, term, pageNum, pageSize) {
+    advancedSqlBuilder(tableName, term, pageNum, pageSize) {
         let res = {};
         let sql = `select * from ${tableName} `;
         let number = `select count(*) as count from  ${tableName} `;
@@ -27,7 +27,6 @@ module.exports = {
                 let key1 = Object.keys(relation)[0];
                 let key2 = Object.keys(relation)[1];
                 sql += `left join ${key2} on ${key1}.${relation[key1]}=${key2}.${relation[key2]} `;
-                number += `left join ${key2} on ${key1}.${relation[key1]}=${key2}.${relation[key2]} `;
             }
         }
 
@@ -37,10 +36,8 @@ module.exports = {
             for (let condition of term.conditions) {
                 if (condition.mode) {
                     sql += `and ${condition.dataTable}.${condition.name} like '%${condition.value}%' `;
-                    number += `and ${condition.dataTable}.${condition.name} like '%${condition.value}%' `;
                 } else {
                     sql += `and ${condition.dataTable}.${condition.name} = '${condition.value}' `;
-                    number += `and ${condition.dataTable}.${condition.name} = '${condition.value}' `;
                 }
             }
         }

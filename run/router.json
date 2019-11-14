@@ -237,8 +237,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/system/login/:username/:password",
-    "regexp": "/^\\/system\\/login\\/((?:[^\\/]+?))\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/api/login/:username/:password",
+    "regexp": "/^\\/api\\/login\\/((?:[^\\/]+?))\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

@@ -193,10 +193,16 @@
       "declarations": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\config.default.js"
     },
     "dependencies": {
+      "await-stream-ready": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\config.default.js",
+      "dayjs": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\config.default.js",
       "egg": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\config.default.js",
       "egg-mysql": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\config.default.js",
+      "egg-oss": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\config.default.js",
       "egg-scripts": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\config.default.js",
-      "egg-view-nunjucks": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\config.default.js"
+      "egg-view-nunjucks": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\config.default.js",
+      "path": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\config.default.js",
+      "stream-wormhole": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\config.default.js",
+      "uuid": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\config.default.js"
     },
     "devDependencies": {
       "autod": "D:\\Project\\egg-demo\\node_modules\\_egg@2.25.0@egg\\config\\config.default.js",

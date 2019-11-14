@@ -3,6 +3,7 @@
 const Service = require('egg').Service;
 const uuid = require('uuid/v4');
 const SqlBuilder = require('../config/SqlBuilder');
+const BackResult = require('../config/BackResult');
 
 /**
  * 高级检索、增删改、文件上传下载Service
@@ -12,7 +13,11 @@ module.exports = class AdvanceService extends Service {
     async find(tableName, conditions, pageNum, pageSize) {
         let sql = SqlBuilder.simpleSqlBuilder(tableName, conditions, pageNum, pageSize);
         const results = await this.app.mysql.query(sql);
-        return { results };
+        if (results && results.length > 0) {
+            return BackResult.backResult(true, results, "", results.length);
+        } else {
+            return BackResult.backResult(false, [], "数据检索失败！", 0);
+        }
     }
 
     //高级检索
@@ -22,7 +27,11 @@ module.exports = class AdvanceService extends Service {
         let number = res.number;
         let results = await this.app.mysql.query(sql);
         let count = await this.app.mysql.query(number);
-        return { results, count };
+        if (results && results.length > 0) {
+            return BackResult.backResult(true, results, "", count[0].count);
+        } else {
+            return BackResult.backResult(false, [], "数据检索失败！", 0);
+        }
     }
 
     //根据id删除数据
