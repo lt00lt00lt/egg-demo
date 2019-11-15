@@ -1,5 +1,8 @@
 # Run
 run/
+/run
+.run
+./run
 
 # Logs
 logs
